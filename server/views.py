@@ -35,7 +35,7 @@ def destroy():
 
 
 def prettyPrint(requestBody):
-	print('Calling endpoint: {ep}. Body ⤵'.format(ep = request.endpoint))
+	print('Called endpoint: {ep}. Body ⤵'.format(ep = request.endpoint))
 
 	jString = json.loads(requestBody.decode('utf-8'))
 	print(json.dumps(jString, sort_keys = True, indent = 2))
